@@ -1,0 +1,175 @@
+/* THIS IS THE PORTFOLIO INDEX CSS*/
+
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    width: 100%; /* Full width */
+    height: 5%;
+    z-index: 3;
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 60%;
+}
+
+.navbar a:hover {
+    background-color:darkgray;
+    font-size: 70%;
+}
+/*end*/
+
+.hportfolio {
+   margin-top: 5%;
+   text-align: center;
+   margin-bottom: -5%;
+   font-family: "Dancing Script", cursive;
+   font-size: 75px;
+   background: linear-gradient(#eee, #ffe6e6,#ffcccc, pink);
+   -webkit-background: linear-gradient(#eee, #ffe6e6,#ffcccc);
+   -o-background: linear-gradient(#eee, #ffe6e6,#ffcccc);
+   -moz-background: linear-gradient(#eee, #ffe6e6,#ffcccc);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -o-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+   -o-text-fill-color: transparent;
+   color:transparent;
+   text-shadow: 1px silver;
+}
+
+.myportfolio {
+    font-family:"Lato", sans-serif;
+    color: grey;
+    text-align: center;
+    border-bottom: 1px dotted silver;
+    margin: 5%;;
+    padding: .5%;
+    -webkit-animation: mymove 3s;
+    -moz-animation: mymove 3s;
+    -o-animation: mymove 3s;
+    animation: mymove 3s;
+}
+
+@-webkit-keyframes mymove {
+    25% {border-bottom-width: 20px;}
+}
+    
+@keyframes mymove {
+    25% {border-bottom-width: 20px;}
+}
+
+
+
+.row {
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.row img {
+    margin: 2%;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+    align-content: center;
+    width: 100%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+        margin-top: 10%;
+   }
+}
+
+.column a:hover {
+    opacity: .5;
+    transition: .5s ease;
+}
+
+/* Porfolio Photo Grids */
+
+.hk, .family {
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.portrait {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.prow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.pcolumn {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.pcolumn img {
+    margin-top: 8px;
+    vertical-align: top;
+    width: 50%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .pcolumn {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .pcolumn {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
